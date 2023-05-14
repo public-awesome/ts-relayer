@@ -134,6 +134,29 @@ export const osmosis: ChainDefinition = {
   estimatedIndexerTime: 80,
 };
 
+export const stargaze: ChainDefinition = {
+  tendermintUrlWs: 'ws://localhost:26653',
+  tendermintUrlHttp: 'http://localhost:26653',
+  chainId: 'stars-testing',
+  prefix: 'stars',
+  denomStaking: 'ustars',
+  denomFee: 'ustars',
+  minFee: '0ustars',
+  blockTime: 250, // ms
+  faucet: {
+    mnemonic:
+      'youth diary absorb yard tumble you today modify fork room marine claim claw dose hood word hawk hurry toward donkey cruise area course cave',
+    pubkey0: {
+      type: 'cosmos.crypto.secp256k1.PubKey',
+      value: 'AzLexH1sG/d9J8hckpEXOgq+B6sfF8lH/gVi6stuN3KS',
+    },
+    address0: 'stars1hgz8jjyek9vkzuujq6pynd8x7jszdqqccjcdwh',
+  },
+  ics20Port: 'transfer',
+  estimatedBlockTime: 400,
+  estimatedIndexerTime: 80,
+};
+
 // constants for this transport protocol
 // look at ChainDefinitions to find standard ics20 port
 export const ics20 = {
